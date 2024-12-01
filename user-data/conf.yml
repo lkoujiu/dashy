@@ -44,22 +44,25 @@ sections:
   - name: Self
     icon: fas fa-wrench
     items:
-      - title: Status
-        url: https://status.ymfsing.com/
       - title: Blog
         url: https://blog.ymfsing.com/
+        statusCheck: true
       - title: URL
         url: https://url.ymfsing.com/
       - title: Memos
-        url: https://memos.ymfsing.com
+        url: https://memos.ymfsing.com/
+        statusCheck: true
       - title: Alist
         url: https://pan.ymfsing.com/
+        statusCheck: true
       - title: RSSHub
         url: https://rsshub.ymfsing.com/
+        statusCheck: true
       - title: Mail2rss
         url: https://mail2rss.ymfsing.com/
       - title: WeWe RSS
         url: https://wewe.ymfsing.com/
+        statusCheck: true
   - name: Coding
     icon: fas fa-wrench
     items:
