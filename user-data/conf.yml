@@ -1,47 +1,104 @@
----
-# Page meta info, like heading, footer text and nav links
-pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
-  navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
 appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+  theme: nord
+  customCss: >-
+    @media (min-width: 1780px) { .home
+    .item-group-container:not(.item-size-large) { grid-template-columns:
+    repeat(3, 1fr); } } .home .item-group-container.item-size-large
+    .item-group-grid, .home .item-group-container.orientation-vertical
+    .item-group-grid { display: flex !important; }
+  auth:
+    enableGuestAccess: true
+    users:
+      - user: ymfsing
+        hash: 4D1E58C90B3B94BCAD9848ECCACD6D2A8C9FBC5CA913304BBA5CDEAB36FEEFA3
+        type: admin
+  webSearch:
+    searchEngine: duckduckgo
+    openingMethod: newtab
+    searchBangs:
+      /r: youtube
+      ':git': github
+  hideComponents:
+    hideHeading: true
+    hideNav: true
+    hideSearch: false
+    hideSettings: true
+    hideSplashScreen: true
+  enableErrorReporting: false
+  allowConfigEdit: false
+  enableFontAwesome: true
+  fontAwesomeKey: 2e949c5bf4
+  faviconApi: allesedv
+  enableMultiTasking: false
+  layout: auto
+  iconSize: medium
+  language: en
+pageInfo:
+  title: home
+  navLinks:
+  - title: Home
+    path: /
+  - title: About
+    path: /about
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
+  - name: Self
     icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
+    items:
+      - title: Status
+        url: https://status.ymfsing.com/
+      - title: Blog
+        url: https://blog.ymfsing.com/
+      - title: URL
+        url: https://url.ymfsing.com/
+      - title: Memos
+        url: https://memos.ymfsing.com
+      - title: Alist
+        url: https://pan.ymfsing.com/
+      - title: RSSHub
+        url: https://rsshub.ymfsing.com/
+      - title: Mail2rss
+        url: https://mail2rss.ymfsing.com/
+      - title: WeWe RSS
+        url: https://wewe.ymfsing.com/
+  - name: Coding
+    icon: fas fa-wrench
+    items:
+      - title: StackOverflow
+        icon: fab fa-stack-overflow
+        url: https://stackoverflow.com/
+      - title: GitHub
+        icon: fab fa-github
+        url: https://github.com/
+      - title: Grep App
+        icon: fas fa-slash
+        description: Allows you to search the contents of files within GitHub repos, with a RegEx option too
+        url: https://grep.app/
+      - title: Regexr
+        icon: fas fa-code
+        description: App for creating, testing and understanding regular expressions
+        url: https://regexr.com/
+  - name: Utilities
+    icon: fas fa-wrench
+    displayData:
+      collapsed: true
+    items:
+      - title: YouTube
+        icon: fab fa-youtube
+        url: https://youtube.com/
+      - title: DeepL
+        description: Fast, accurate, secure online multi-language translator
+        url: https://www.deepl.com/translator
+      - title: Font Generator
+        description: Use ASCII characters for different plaintext fonts
+        url: https://www.fontgeneratoronline.com/
+      - title: JSON Formatter
+        description: CSV, JSON, YAML, XML and more formatting tools
+        url: https://jsonformatter.org/
+      - title: Time.Is
+        description: Time.Is
+        url: https://time.is/
+      - title: Dashy Docs
+        url: https://dashy.to/docs/configuring
+        icon: generative
+        id: 5_1353_configdocs
   
