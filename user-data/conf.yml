@@ -16,8 +16,10 @@ appConfig:
     searchEngine: duckduckgo
     openingMethod: newtab
     searchBangs:
-      /r: youtube
-      ':git': github
+      /y: youtube
+      /w: wikipedia
+      /c: https://grep.app/search?q=
+      /d: https://www.douban.com/search?q=
   hideComponents:
     hideHeading: true
     hideNav: true
