@@ -51,18 +51,14 @@ sections:
         url: https://url.ymfsing.com/
       - title: Memos
         url: https://memos.ymfsing.com/
-        statusCheck: true
       - title: Alist
         url: https://pan.ymfsing.com/
-        statusCheck: true
       - title: RSSHub
         url: https://rsshub.ymfsing.com/
-        statusCheck: true
       - title: Mail2rss
         url: https://mail2rss.ymfsing.com/
       - title: WeWe RSS
         url: https://wewe.ymfsing.com/
-        statusCheck: true
   - name: Coding
     icon: fas fa-wrench
     items:
@@ -86,7 +82,6 @@ sections:
       collapsed: true
     items:
       - title: YouTube
-        icon: fab fa-youtube
         url: https://youtube.com/
       - title: DeepL
         description: Fast, accurate, secure online multi-language translator
@@ -102,6 +97,5 @@ sections:
         url: https://time.is/
       - title: Dashy Docs
         url: https://dashy.to/docs/configuring
-        icon: generative
         id: 5_1353_configdocs
   
