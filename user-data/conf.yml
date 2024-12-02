@@ -61,8 +61,30 @@ sections:
         url: https://mail2rss.ymfsing.com/
       - title: WeWe RSS
         url: https://wewe.ymfsing.com/
+  - name: Search
+    icon: fas fa-wrench
+    items:
+      - title: Luxirty Search
+        url: https://search.luxirty.com/
+      - title: MSD
+        url: https://www.msdmanuals.cn/home
+      - title: NeoDB
+        url: https://neodb.social/discover/
+      - title: Anna’s Archive
+        url: https://annas-archive.org/
+      - title: Archive.today
+        url: https://archive.today/
+  - name: AI
+    icon: fas fa-wrench
+    items:
+      - title: Perplexity
+        url: https://www.perplexity.ai/
+      - title: summarize.tech
+        url: https://www.summarize.tech/
   - name: Coding
     icon: fas fa-wrench
+    displayData:
+      collapsed: true
     items:
       - title: StackOverflow
         icon: fab fa-stack-overflow
@@ -78,22 +100,26 @@ sections:
         icon: fas fa-code
         description: App for creating, testing and understanding regular expressions
         url: https://regexr.com/
+      - title: JSON Formatter
+        description: CSV, JSON, YAML, XML and more formatting tools
+        url: https://jsonformatter.org/
   - name: Utilities
     icon: fas fa-wrench
     displayData:
       collapsed: true
     items:
-      - title: YouTube
-        url: https://youtube.com/
       - title: DeepL
         description: Fast, accurate, secure online multi-language translator
         url: https://www.deepl.com/translator
+      - title: JQ
+        url: https://m.youlai.cn/jijiu
+      - title: Snapdrop
+        url: https://drop.ioiox.com/
+      - title: MarginNote
+        url: https://www.wolai.com/89rjeaKjQmD9m2kygMQeJE
       - title: Font Generator
         description: Use ASCII characters for different plaintext fonts
         url: https://www.fontgeneratoronline.com/
-      - title: JSON Formatter
-        description: CSV, JSON, YAML, XML and more formatting tools
-        url: https://jsonformatter.org/
       - title: Time.Is
         description: Time.Is
         url: https://time.is/
